@@ -1,0 +1,9 @@
+node_modules
+
+tests
+browserstack-json/generate-screenshot.json
+screenshots
+screenshots*
+diff*
+
+package-lock.json
