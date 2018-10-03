@@ -9,7 +9,7 @@
 
             <div class="content-wrapper-1">
 
-                
+
 
                 <div class="content-header">
                     <img class="avatar" :src="imgSrc">
@@ -59,7 +59,7 @@
             <Payment />
             <About />
 		</div>
-        
+
     </div>
 </template>
 
@@ -89,7 +89,7 @@ export default {
     Feedback,
     Payment,
     About,
-    Tooltip,
+    Tooltip
   },
 
   methods: {
