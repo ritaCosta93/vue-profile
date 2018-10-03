@@ -41,21 +41,3 @@
         }
 }
 
-.tooltip{
-    display: none;
-    justify-content: center;
-    background-color: slategray;
-    max-width: 94%;
-    flex-wrap: wrap;
-    margin: 5px;
-    border-radius: 10px;
-    padding: 4px;
-    font-size: 12px;
-    color: whitesmoke;
-    box-shadow: 2px 2px #bfbfbf80;
-    align-items: center;
-
-    &-is-active {
-        display: flex;
-    }
-}
