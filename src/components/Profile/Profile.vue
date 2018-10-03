@@ -1,6 +1,6 @@
 <template>
     <div class="profile">
-<Feeback />
+
         <div class="header">
             <h1>Profile</h1>
         </div>
@@ -8,6 +8,8 @@
         <div class="content">
 
             <div class="content-wrapper-1">
+
+                
 
                 <div class="content-header">
                     <img class="avatar" :src="imgSrc">
@@ -35,15 +37,15 @@
                         </li>
                         <li>
                             <img class="link-icon" src="https://cdn4.iconfinder.com/data/icons/48-bubbles/48/07.Wallet-16.png"/>
-                            <a href="#">Payment</a>
+                            <a @click="pyt" href="#">Payment</a>
                         </li>
                         <li>
                             <img class="link-icon" src="https://cdn3.iconfinder.com/data/icons/seo-marketing-19/32/SEO-18-16.png"/>
-                            <a href="#">Feedback</a>
+                            <a @click="fdb" href="#">Feedback</a>
                         </li>
                         <li>
                             <img class="link-icon" src="https://cdn0.iconfinder.com/data/icons/basic-ui-1-line/64/Artboard_3-16.png"/>
-                            <a href="#">About</a>
+                            <a @click="abt" href="#">About</a>
                         </li>
                     </ul>
                 </div>
@@ -54,10 +56,10 @@
 
             <Address />
             <Feedback />
-
-            
-
+            <Payment />
+            <About />
 		</div>
+        
     </div>
 </template>
 
@@ -65,6 +67,9 @@
 import Account from '../Account/Account.vue'
 import Address from '../Address/Address.vue'
 import Feedback from '../Feedback/Feedback.vue'
+import Payment from '../Payment/Payment.vue'
+import About from '../About/About.vue'
+import Tooltip from '../Tooltip/Tooltip.vue'
 
 export default {
   name: 'Profile',
@@ -81,7 +86,10 @@ export default {
   components: {
     Account,
     Address,
-    Feedback
+    Feedback,
+    Payment,
+    About,
+    Tooltip,
   },
 
   methods: {
@@ -90,16 +98,46 @@ export default {
       document.querySelector('.content-wrapper-2').style.display = 'flex';
       document.querySelector('.content-wrapper-3').style.display = 'none';
       document.getElementById('act').style.display = 'flex';
+      document.querySelector('.content-wrapper-4').style.display = 'none';
+      document.querySelector('.content-wrapper-5').style.display = 'none';
+      document.querySelector('.content-wrapper-6').style.display = 'none';
     },
     //Address
     adr() {
       document.querySelector('.content-wrapper-2').style.display = 'none';
       document.querySelector('.content-wrapper-3').style.display = 'flex';
-    }
+      document.querySelector('.content-wrapper-4').style.display = 'none';
+      document.querySelector('.content-wrapper-5').style.display = 'none';
+      document.querySelector('.content-wrapper-6').style.display = 'none';
+    },
+    //Feedback
+    fdb() {
+      document.querySelector('.content-wrapper-2').style.display = 'none';
+      document.querySelector('.content-wrapper-3').style.display = 'none';
+      document.querySelector('.content-wrapper-4').style.display = 'flex';
+      document.querySelector('.content-wrapper-5').style.display = 'none';
+      document.querySelector('.content-wrapper-6').style.display = 'none';
+    },
+    //Payment
+    pyt(){
+      document.querySelector('.content-wrapper-2').style.display = 'none';
+      document.querySelector('.content-wrapper-3').style.display = 'none';
+      document.querySelector('.content-wrapper-4').style.display = 'none';
+      document.querySelector('.content-wrapper-5').style.display = 'flex';
+      document.querySelector('.content-wrapper-6').style.display = 'none';
+    },
+    //About
+    abt(){
+      document.querySelector('.content-wrapper-2').style.display = 'none';
+      document.querySelector('.content-wrapper-3').style.display = 'none';
+      document.querySelector('.content-wrapper-4').style.display = 'none';
+      document.querySelector('.content-wrapper-5').style.display = 'none';
+      document.querySelector('.content-wrapper-6').style.display = 'flex';
+    },
   }
 };
 </script>
 
-<style>
+<style lang="scss">
 @import 'Profile.scss';
 </style>

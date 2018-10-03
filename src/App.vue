@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <Profile name="Rita Costa" imgSrc="https://via.placeholder.com/100x100" />
+    <Profile name="Your Name Goes Here!" imgSrc="https://via.placeholder.com/100x100" />
+    
   </div>
 </template>
 
@@ -11,7 +12,7 @@ import Profile from './components/Profile/Profile.vue'
 export default {
   name: 'app',
   components: {
-    Profile
+    Profile,
   }
 }
 </script>

@@ -1,36 +1,18 @@
 <template>
-<div class="feeback">
-    <ul>
-        <li>
-            <a href="#"><img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-star-outline-16.png"/></a>
-            <a href="#"><img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-star-outline-16.png"/></a>
-            <a href="#"><img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-star-outline-16.png"/></a>
-            <a href="#"><img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-star-outline-16.png"/></a>
-            <a href="#"><img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-star-outline-16.png"/></a>
-        </li>
-    </ul>
-</div>
+    <div class="content-wrapper-4" id="" >
+        feedback
+    </div>
 </template>
 
 <script>
 export default {
-
-    name: 'Feedback',
-
-    props:{
-
-    },
-
-    components:{
-
-    },
-    methods:{
-
-    },
+  name: 'Feedback',
+  props: {
     
-}
+  },
+};
 </script>
 
-<style>
-@import 'Feedback.scss'
+<style lang="scss">
+@import 'Feedback.scss';
 </style>

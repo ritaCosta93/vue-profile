@@ -1,6 +1,12 @@
-.feedback{
-    ul li a:hover{
-    background-color: yellow;
+.content-wrapper-4{
+    background-color: #FFFFFF;
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px;
+    box-shadow: 2px 2px 20px rgba(116, 116, 116, 0.212);
+    padding-bottom: 20px;
+    border-radius: 5px;
+    justify-content: center;
 }
-}
-
